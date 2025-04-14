@@ -1,0 +1,190 @@
+/* Elements */
+body
+{
+    font-family: serif;
+    background-color: #19191C;
+    margin: 0;
+    color: white;
+}
+
+/* - header */
+header
+{
+    background-color: #29292C;
+    border-bottom: 1px solid gray;
+}
+
+header *
+{
+    background-color: #29292C;
+
+}
+
+
+/* Link */
+a:link
+{
+    color: rgb(207, 211, 252);
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: rgb(252, 207, 207);
+}
+
+a:hover
+{
+    text-decoration: underline white;
+}
+
+/* navigation */
+
+
+nav
+{
+    text-align: center;
+    color: whitesmoke;
+    float: right;
+    margin-right: 5%;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+nav li
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: larger;
+    padding: 1em;
+}
+
+nav a:link, nav a:visited
+{
+    color: whitesmoke;
+}
+
+nav a:hover
+{
+    text-decoration: underline white;
+}
+
+article
+{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: fit-content;
+    height: auto;
+    border: gray 1px solid;
+    border-radius: 10px;
+    padding: 2em;
+    background-color: #29292C;
+}
+
+article img
+{
+    display: block;
+    width: 30%;
+    height: 30%;
+    margin-right: 1em;
+}
+
+article h1
+{
+    text-align: center;
+    border-bottom: gray solid 1px;
+    padding-bottom: 1em;
+}
+
+
+/* Footer */
+footer
+{
+    margin-top: 2em;
+    padding: 1em;
+    text-align: center;
+    background-color: #29292C;
+    border-top: 1px solid gray;
+    font-size: large;
+}
+
+footer em
+{
+    color: red;
+    font-weight: bolder;
+}
+
+/* time */
+time
+{
+    font-style: italic;
+}
+
+
+/* Div */
+/* - Introduction */
+.intro
+{
+    color: whitesmoke;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    box-sizing: border-box;
+    width: 50%;
+
+}
+
+
+.intro ul
+{
+    list-style-type: none;
+
+}
+
+.intro h1, .intro h2
+{
+    padding-left: 20px;
+    padding-right: 1em;
+}
+
+/* Back to top */
+.back_to_top
+{
+    box-sizing: border-box;
+    width: fit-content;
+    font-size: large;
+    font-weight: bold;
+    padding: 0.25em 1em;
+    background-color: cadetblue;
+    border: 2px gray solid;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+.back_to_top a:link, .back_to_top a:visited
+{
+    color: white;
+}
+
+/* id */
+/* Writer's name */
+#writer_name, time
+{
+    font-weight: bold;
+}
+
+/* Telephone */
+#telephone
+{
+    color: rgb(252, 207, 207);
+}
+
+

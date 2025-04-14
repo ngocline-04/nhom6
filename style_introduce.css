@@ -1,0 +1,211 @@
+/* Cấu trúc cơ bản */
+body {
+    font-family: 'Courier New', monospace; /* Phông chữ monospace giống lập trình viên */
+    background-color: #0a0b0b; /* Nền tối */
+    color: #e0e0e0; /* Màu chữ sáng, dễ đọc trên nền tối */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #e6edec; /* Màu chữ xanh mint nhẹ */
+    padding: 40px;
+    text-align: center;
+    border-bottom: 3px solid #0f0f0f;
+}
+header .intro h1 {
+    font-size: 3rem; /* Cỡ chữ lớn */
+    margin: 0;
+}
+
+header .intro p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #756666; /* Nền tối cho menu */
+    margin-top: 20px;
+    border-top: 2px solid #444;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #b2e4e0; /* Màu chữ của các mục menu */
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Màu vàng khi hover */
+    border-bottom: 2px solid #ffd700; /* Tạo đường viền dưới khi hover */
+}
+
+main {
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 70px; /* Khoảng cách giữa các phần */
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #76c7c0;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-family: 'Courier New', monospace; /* Phông chữ monospace cho các phần tử danh sách */
+}
+
+a {
+    color: #76c7c0;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffd700; /* Màu vàng khi hover lên liên kết */
+}
+
+button {
+    padding: 15px 25px;
+    background-color: #76c7c0; /* Màu nút giống menu */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b7ff00; /* Màu vàng khi hover */
+}
+
+footer {
+    background-color: #282828;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #444;
+}
+
+/* Bố cục của từng mục (Hình ảnh bên phải, văn bản bên trái) */
+.section-content {
+    display: flex;
+    justify-content: space-between; /* Giúp phần tử được phân bố đều */
+    align-items: center;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.section-content img {
+    width: 40%; /* Hình ảnh chiếm 40% chiều rộng */
+    max-width: 450px; /* Giới hạn kích thước tối đa của hình ảnh */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 50px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+section p {
+    flex: 1;
+    font-size: 1.3rem; /* Cỡ chữ lớn cho đoạn văn */
+    line-height: 1.8;
+    width: 50%; /* Đoạn văn chiếm 50% chiều rộng */
+    background-color: #1c1c1c; /* Nền tối cho đoạn văn */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Điều chỉnh khi màn hình nhỏ */
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column; /* Chuyển sang xếp theo chiều dọc trên màn hình nhỏ */
+        align-items: center;
+    }
+
+    .section-content img {
+        width: 80%; /* Hình ảnh chiếm 80% chiều rộng trên màn hình nhỏ */
+        margin-left: 0; /* Loại bỏ khoảng cách trái */
+        margin-bottom: 20px; /* Thêm khoảng cách dưới hình ảnh */
+    }
+
+    section p {
+        width: 80%; /* Đoạn văn chiếm 80% chiều rộng trên màn hình nhỏ */
+    }
+}
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li i {
+    margin-right: 10px; /* Khoảng cách giữa icon và văn bản */
+    font-size: 1.5rem; /* Kích thước icon */
+    color: #76c7c0; /* Màu sắc của icon */
+    transition: color 0.3s ease;
+}
+
+.contact-info ul li a {
+    color: #76c7c0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+    color: #ffd700; /* Màu vàng khi hover */
+}
+
+.contact-info ul li i:hover {
+    color: #ffd700; /* Màu vàng khi hover icon */
+}
+.subscribe-content {
+    display: flex;
+    justify-content:top;
+    align-items: top;
+    gap: 20px; /* Khoảng cách giữa nút và ảnh */
+}
+/* Nút Trang chủ ở góc trên bên trái */
+.home-button {
+    position: fixed;
+    top: 20px;  /* Khoảng cách từ cạnh trên */
+    right: 20px; /* Khoảng cách từ cạnh trái */
+    background-color: #5ab9cc;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1000; /* Đảm bảo nút luôn hiển thị trên các phần tử khác */
+}
+
+.home-button:hover {
+    background-color: #bbd350;
+}

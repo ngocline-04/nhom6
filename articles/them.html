@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lập trình cho người mới bắt đầu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #19191C;
+            color: white;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background: #29292C;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            
+        }
+        p {
+            line-height: 1.6;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #e44d26;
+        }
+        .section {
+            margin-top: 20px;
+            padding: 15px;
+            background: #252528;
+            border-left: 5px solid #3498db;
+        }
+        .images {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lập trình cho người mới bắt đầu</h1>
+        <p>Chào mừng bạn đến với hành trình học lập trình! Đây là một số khái niệm cơ bản mà bạn cần nắm vững trước khi bắt đầu viết chương trình.</p>
+        <div class="images">
+            <img src="images\learning-web.jpg" alt="Programming">
+        </div>
+        <div class="section">
+            <h2>1. Biến và kiểu dữ liệu</h2>
+            <p>Biến là một vùng nhớ có tên, dùng để lưu trữ dữ liệu trong chương trình. Giá trị của biến có thể thay đổi trong quá trình thực thi, giúp quản lý và xử lý thông tin linh hoạt. Mỗi biến có một kiểu dữ liệu xác định, quyết định loại giá trị mà nó có thể lưu trữ, như số nguyên, số thực, ký tự hay chuỗi. Việc sử dụng biến giúp lập trình viên dễ dàng thao tác với dữ liệu, tính toán và điều khiển luồng thực thi của chương trình.. Trong C/C++, các kiểu dữ liệu phổ biến bao gồm:</p>
+            <ul>
+                <li><i>int</i>: Số nguyên</li>
+                <li><i>float</i>: Số thực</li>
+                <li><i>char</i>: Ký tự</li>
+                <li><i>bool</i>: Biến logic</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>2. Toán tử</h2>
+            <p>Toán tử là các ký hiệu dùng để thực hiện các phép toán trên biến, giúp xử lý dữ liệu và điều khiển chương trình hiệu quả. Chúng bao gồm toán tử số học để thực hiện các phép tính như cộng, trừ, nhân, chia; toán tử so sánh để kiểm tra quan hệ giữa các giá trị; toán tử logic để kết hợp các biểu thức điều kiện; và toán tử gán để gán giá trị cho biến. Nhờ các toán tử, lập trình viên có thể thực hiện các phép tính và kiểm tra điều kiện một cách nhanh chóng, góp phần tối ưu hóa chương trình.</p>
+            <ul>
+                <li>Toán tử số học: <b>+, -, *, /, %</b></li>
+                <li>Toán tử so sánh: <b>==, !=, >, <, >=, <=</b></li>
+                <li>Toán tử logic: <b>&&, ||, !</b></li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>3. Cấu trúc điều kiện</h2>
+            <p>Cấu trúc điều kiện là một phần quan trọng trong lập trình, giúp chương trình đưa ra quyết định dựa trên các điều kiện cụ thể. Khi một điều kiện được kiểm tra, chương trình sẽ thực thi khối lệnh tương ứng với kết quả đúng hoặc sai. Thông thường, cấu trúc điều kiện bao gồm câu lệnh if, if-else, và switch-case. Câu lệnh if cho phép kiểm tra một điều kiện và thực thi lệnh nếu điều kiện đúng, trong khi if-else xử lý cả hai trường hợp đúng và sai. Đối với switch-case, nó được sử dụng khi cần kiểm tra nhiều giá trị khác nhau của một biến. Nhờ có cấu trúc điều kiện, chương trình có thể hoạt động linh hoạt và xử lý tình huống một cách hiệu quả.</p>
+        </div>
+        
+        <div class="section">
+            <h2>4. Vòng lặp</h2>
+            <p>Vòng lặp là một cấu trúc quan trọng trong lập trình, giúp thực hiện một hành động nhiều lần mà không cần lặp lại mã nguồn thủ công. Vòng lặp giúp tối ưu hóa chương trình, giảm sự lặp lại không cần thiết và tăng hiệu suất xử lý. Có ba loại vòng lặp phổ biến: for, while và do-while. Vòng lặp for thường được sử dụng khi số lần lặp biết trước, vòng lặp while thực thi khi điều kiện còn đúng, và vòng lặp do-while đảm bảo khối lệnh được chạy ít nhất một lần trước khi kiểm tra điều kiện. Nhờ vòng lặp, lập trình viên có thể xử lý dữ liệu hàng loạt, duyệt qua mảng, hoặc thực hiện các thao tác lặp lại một cách hiệu quả.</p>
+        </div>
+        
+        <div class="section">
+            <h2>5. Hàm</h2>
+            <p>Hàm là một khối mã có thể tái sử dụng, giúp tổ chức mã nguồn một cách rõ ràng và hiệu quả hơn. Mỗi hàm thực hiện một nhiệm vụ cụ thể, giúp chia nhỏ chương trình thành các phần dễ quản lý, dễ hiểu và dễ bảo trì. Khi cần thực hiện một tác vụ nhiều lần, thay vì viết lại mã lặp đi lặp lại, lập trình viên chỉ cần gọi hàm tương ứng, giúp tiết kiệm thời gian và giảm sai sót. Hàm có thể nhận tham số đầu vào và trả về giá trị, giúp linh hoạt trong xử lý dữ liệu. Nhờ có hàm, chương trình trở nên có cấu trúc hơn, dễ mở rộng và tối ưu hiệu suất.</p>
+        </div>
+        
+        <div class="section">
+            <h2>6. Mảng</h2>
+            <p>Mảng là một cấu trúc dữ liệu dùng để lưu trữ nhiều giá trị cùng kiểu dữ liệu trong một vùng nhớ liên tiếp. Các phần tử trong mảng được truy cập thông qua chỉ số, giúp thao tác dữ liệu nhanh chóng và hiệu quả. Mảng giúp quản lý và xử lý dữ liệu hàng loạt, giảm bớt việc khai báo nhiều biến riêng lẻ. Có hai loại mảng chính: mảng một chiều và mảng đa chiều. Mảng một chiều lưu trữ danh sách các giá trị, trong khi mảng đa chiều cho phép tổ chức dữ liệu dưới dạng bảng hoặc ma trận. Nhờ mảng, lập trình viên có thể dễ dàng thao tác với dữ liệu lớn và tối ưu hóa thuật toán xử lý thông tin.</p>
+        </div>
+        
+        <div class="section">
+            <h2>7. Con trỏ</h2>
+            <p>Con trỏ là một biến đặc biệt trong lập trình, được sử dụng để lưu trữ địa chỉ của một vùng nhớ thay vì trực tiếp chứa giá trị. Nhờ con trỏ, chương trình có thể truy xuất và thao tác dữ liệu một cách linh hoạt, đặc biệt trong cấp phát bộ nhớ động, truyền tham chiếu cho hàm và xử lý cấu trúc dữ liệu phức tạp như danh sách liên kết. Con trỏ giúp tối ưu hóa hiệu suất, nhưng cũng yêu cầu quản lý bộ nhớ cẩn thận để tránh lỗi truy cập sai vùng nhớ hoặc rò rỉ bộ nhớ. Với khả năng thao tác trực tiếp trên địa chỉ, con trỏ đóng vai trò quan trọng trong lập trình hệ thống và tối ưu hóa thuật toán.</p>
+        </div>
+        
+        <div class="section">
+            <h2>8. Cấp phát bộ nhớ động</h2>
+            <p>Cấp phát bộ nhớ động cho phép chương trình yêu cầu và giải phóng bộ nhớ trong quá trình thực thi, giúp quản lý tài nguyên hiệu quả hơn so với cấp phát tĩnh. Nhờ cơ chế này, chương trình có thể linh hoạt tạo ra các cấu trúc dữ liệu có kích thước thay đổi theo nhu cầu thực tế, thay vì phải định sẵn kích thước ngay từ đầu. Trong ngôn ngữ C/C++, các hàm như `malloc`, `calloc`, `realloc` và `free` được sử dụng để cấp phát và giải phóng bộ nhớ động. Nếu không quản lý đúng cách, cấp phát động có thể gây ra lỗi tràn bộ nhớ hoặc rò rỉ bộ nhớ, ảnh hưởng đến hiệu suất chương trình.</p>
+        </div>
+        
+        <div class="section">
+            <h2>9. Lập trình hướng đối tượng</h2>
+            <p>Lập trình hướng đối tượng (OOP) là một phương pháp lập trình giúp tổ chức mã theo mô hình đối tượng, trong đó dữ liệu và các hành vi liên quan được gói gọn trong một thực thể duy nhất. OOP giúp quản lý mã nguồn dễ dàng hơn bằng cách sử dụng các khái niệm chính như lớp (class), đối tượng (object), kế thừa (inheritance), đóng gói (encapsulation), đa hình (polymorphism) và trừu tượng (abstraction). Nhờ OOP, lập trình viên có thể tái sử dụng mã, mở rộng chương trình linh hoạt và duy trì hệ thống một cách hiệu quả. Phương pháp này đặc biệt hữu ích trong các dự án phần mềm lớn, giúp giảm thiểu lỗi và tối ưu hóa quy trình phát triển.</p>
+        </div>
+        
+        <p>Học lập trình là một quá trình dài, nhưng khi bạn nắm vững những kiến thức này, bạn sẽ dễ dàng tiếp cận các khái niệm phức tạp hơn. Chúc bạn học tốt!</p>
+        <p> Bạn có thể tham khảo một số trang web học tập</p>
+        <ul>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools </a></li>
+            <li><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks </a></li>
+            <li><a href="https://www.codecademy.com/" target="_blank">Codecademy </a></li>
+            <li><a href="https://www.udemy.com/" target="_blank">Udemy - Các khóa học lập trình chuyên sâu</a></li>
+        </ul>
+    </div>
+</body>
+</html>
